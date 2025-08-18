@@ -1,0 +1,14 @@
+.dark-mode {
+    --bg-light: #121212;
+    --text-light: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --primary: #a29bfe;
+}
+
+.dark-mode .daily-content {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode button {
+    background: var(--primary);
+}

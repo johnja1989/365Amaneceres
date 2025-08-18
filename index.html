@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="365 Amaneceres: Tu año de crecimiento personal con reflexiones diarias, manifestaciones y audio motivacional." />
+    <meta name="theme-color" content="#6c5ce7" />
+    <title>365 Amaneceres - Tu Año de Transformación</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/dark-mode.css" disabled id="dark-mode-style" />
+    <link rel="icon" href="assets/images/sun-icon.png" type="image/png" />
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>365 Amaneceres</h1>
+            <button id="theme-toggle">🌓</button>
+        </header>
+
+        <main class="daily-content">
+            <div class="day-info">
+                <h2>Día <span id="day-number">1</span></h2>
+                <p id="date-today">Cargando fecha...</p>
+            </div>
+
+            <section class="reflection">
+                <h3>Reflexión del día</h3>
+                <p id="daily-reflection">Cargando reflexión...</p>
+            </section>
+
+            <section class="affirmation">
+                <h3>Manifestación Positiva</h3>
+                <p id="daily-affirmation">Cargando afirmación...</p>
+                <button id="play-affirmation">▶️ Escuchar</button>
+            </section>
+
+            <section class="routine">
+                <h3>Rutina del día</h3>
+                <ul id="daily-routine">
+                    <li>Respira profundamente 5 veces</li>
+                    <li>Escribe 3 cosas por las que estás agradecido</li>
+                    <li>Repite la manifestación 3 veces en voz alta</li>
+                    <li>Visualiza tu día ideal por 2 minutos</li>
+                </ul>
+            </section>
+        </main>
+
+        <audio id="audio-player" preload="metadata"></audio>
+
+        <nav class="navigation">
+            <button id="prev-day">◀ Anterior</button>
+            <button id="next-day">Siguiente ▶</button>
+        </nav>
+
+        <footer class="progress">
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p>Progreso: <span id="progress-text">0%</span></p>
+        </footer>
+    </div>
+
+    <script src="js/daily-content.js"></script>
+    <script src="js/audio-player.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
